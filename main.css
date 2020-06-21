@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 567px){
+    #contenedorGeneral{
+        width: 90%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        border: solid 1px black;
+    }
+    .fotos{
+        width: 100%;
+        height: calc(100%/5);
+        border: solid 1px black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 150%;
+    }
+    #foto1{
+        background-image: url(img/fotoM_1.jpg);
+    }
+    #foto2{
+        background-image: url(img/fotoM_2.jpg);
+    }
+    #foto3{
+        background-image: url(img/fotoM_3.jpg);
+    }
+    #foto4{
+        background-image: url(img/fotoM_4.jpg);
+    }
+    #foto5{
+        background-image: url(img/fotoM_5.webp);
+    }
+}
+@media (min-width: 568px){
+    #contenedorGeneral{
+        position: relative;
+        width: 90%;
+        height: 450px;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.43);
+        border-radius: 2em;
+    }
+    .fotos{
+        width: calc(100%/5);
+        height: 100%;
+        transition: 1s;
+        background-position: center;
+    }
+    .fotos:hover{
+        width: 100%;
+        transition: 1s;
+    }
+    #foto1{
+        background-image: url(img/foto_1.png);
+    }
+    #foto2{
+        background-image: url(img/foto_2.png);
+    }
+    #foto3{
+        background-image: url(img/foto_3.png);
+    }
+    #foto4{
+        background-image: url(img/foto_4.png);
+    }    
+    #foto5{
+        background-image: url(img/foto_5.png);
+    }
+}
